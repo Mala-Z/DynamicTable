@@ -1,0 +1,117 @@
+/* || general styles */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: 'Faster One', cursive;
+}
+
+/* header styles */
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* section styles */
+
+section article {
+  width: 33%;
+  float: left;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+section ul {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+}
+table, th, td
+{
+  margin:10px 0;
+  border:solid 1px #333;
+  padding:2px 4px;
+  font:25px  Verdana, 'Faster One';
+}
+/* All <th>s within <thead>s that are within <table>s */
+table th {
+  color: white;
+  background: black;
+  font-weight:bold;
+
+}
+
+/*td:hover { background: blue; }*/
+/*td:last-child{
+    -webkit-text-fill-color: pink;
+}*/
+
+td:first-child {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+}
+td:nth-child(4):hover{
+  -webkit-text-fill-color: white;
+  background: darkslategrey;
+}
+
+/*loader*/
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.row .formlabel{                         /* fields label's style  */
+  text-align: right;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: lighter;
+  margin: 0px;
+  padding: 0px;
+  text-transform: capitalize;
+  color:#000000;
+}
+
+
